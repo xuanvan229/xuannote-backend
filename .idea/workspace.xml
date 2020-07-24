@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b63f3d5d-2174-4941-8f1c-9eca893a2e28" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/middleware/authentication.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/authentication.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resource/user/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/user/model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resource/user/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/user/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resource/user/validation.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/user/validation.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/app.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="201">
+              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -52,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/middleware/authentication.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="165" selection-start-line="165" selection-end-line="165" />
+            <state relative-caret-position="476">
+              <caret line="31" column="19" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -143,6 +140,7 @@
       <find>ImageSavePath</find>
       <find>RuntimeRootPath</find>
       <find>exists</find>
+      <find>CORSMiddleware</find>
     </findStrings>
     <replaceStrings>
       <replace>note</replace>
@@ -185,11 +183,11 @@
         <option value="$PROJECT_DIR$/src/resource/note/validation.go" />
         <option value="$PROJECT_DIR$/src/config/app_dev.ini" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/app/app.go" />
         <option value="$PROJECT_DIR$/src/resource/user/validation.go" />
         <option value="$PROJECT_DIR$/src/resource/user/model.go" />
         <option value="$PROJECT_DIR$/src/resource/user/router.go" />
         <option value="$PROJECT_DIR$/src/middleware/authentication.go" />
+        <option value="$PROJECT_DIR$/src/app/app.go" />
       </list>
     </option>
   </component>
@@ -568,13 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resource/user/validation.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -598,8 +589,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/middleware/authentication.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="165" selection-start-line="165" selection-end-line="165" />
+        <state relative-caret-position="476">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
         </state>
       </provider>
     </entry>

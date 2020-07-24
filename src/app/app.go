@@ -46,11 +46,11 @@ func AuthRequired1() gin.HandlerFunc {
 func (app *App) setRouters() {
 	store, _ := sessions.NewRedisStore(config.RedisSetting.Size, config.RedisSetting.NetWork, config.RedisSetting.Host, config.RedisSetting.Password, []byte(config.RedisSetting.KeyPairs))
 	app.Router.Use(sessions.Sessions("session", store))
+	app.Router.Use(middleware.CORSMiddleware())
 
 	app.Router.Use(gin.Logger())
 	app.Router.Use(gin.Recovery())
 	api := app.Router.Group("/api")
-	api.Use(middleware.CORSMiddleware())
 	upload.ViewImageRegiter(api)
 	note.RegisterRouteNoToken(api)
 	api.GET("/hi", middleware.CheckLogin)
