@@ -3,7 +3,6 @@ package user
 import (
 	"log"
 	"note/config"
-	"note/resource/permission"
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
@@ -20,8 +19,8 @@ type UserModel struct {
 	Email        string    `json:"email"`
 	Phone        string    `json:"phone"`
 	Password     string    `json:"-"`
-	Permission   permission.PermissionModel
-	PermissionID uuid.UUID `json:"-"`
+	//Permission   permission.PermissionModel
+	//PermissionID uuid.UUID `json:"-"`
 }
 
 type JwtCustomClaims struct {

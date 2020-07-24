@@ -156,7 +156,6 @@ func CheckLogin(c *gin.Context) {
 	defer db.Close()
 	userInDB, isExist := user.IsExist(userInfo, db)
 
-	db.Model(&userInDB).Related(&userInDB.Permission, "Permission")
 	fmt.Println("userInDB", userInDB)
 	if !isExist {
 		app.Response(http.StatusInternalServerError, constant.USER_DOES_NOT_EXIST, nil, nil)
@@ -164,7 +163,6 @@ func CheckLogin(c *gin.Context) {
 	}
 	user_info := map[string]interface{}{
 		"username":   userInDB.Username,
-		"permission": userInDB.Permission.Score,
 	}
 	app.Response(http.StatusOK, constant.SUCCESS, user_info, nil)
 	return

@@ -83,7 +83,6 @@ func Login(c *gin.Context) {
 		return
 	}
 
-	db.Model(&user).Related(&user.Permission, "Permission")
 	if comparePasswords(user.Password, []byte(userLoginValidator.User.Password)) {
 		token, err := createToken(user)
 		if err != nil {
@@ -93,7 +92,6 @@ func Login(c *gin.Context) {
 		c.SetCookie("_token", token, 3600, "/", "", false, true)
 		c.SetCookie("_userID", user.ID.String(), 3600, "/", "", false, true)
 		data := map[string]interface{}{
-			"permission": user.Permission.Score,
 			"token":      token,
 			"userID":     user.ID.String(),
 		}
